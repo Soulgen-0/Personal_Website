@@ -1,0 +1,151 @@
+:root {
+    --primary: #63adf2;
+    --primary-dark: #304d6d;
+    --button: #519be0;
+    --background: #f8fbff;
+    --surface: #ffffff;
+    --text: #1e1e1e;
+    --text-inverted: #ffffff;
+    --text-muted: #6b7280;
+    --success: #22c55e;
+    --warning: #f59e0b;
+    --danger: #ef4444;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: var(--background);
+    margin: 0;
+    height: 100%;
+}
+
+.grid-wrapper {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+main {
+    margin: 3rem 0rem;
+    padding: 0rem 12rem;
+}
+
+.grid-container {
+    padding-top: 7rem;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+}
+
+main h2 {
+    margin-top: 0%;
+}
+
+h1, h2, h3, h4, h5, h6, a, p, footer {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text);
+}
+
+p {
+    font-size: 1.4rem;
+}
+
+footer {
+    color: var(--primary-dark);
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 3rem;
+}
+
+.icon {
+    width: 20rem;
+    height: 20rem;
+    align-self: center;
+    margin: 1rem;
+}
+
+.topic-block {
+    color: var(--primary-dark)
+}
+
+.topic-block-inline {
+    display: inline;
+    color: var(--primary-dark)
+}
+
+.page-heading {
+    font-size: 4rem;
+    max-width: 60rem;
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: var(--primary);
+    display: block;
+    margin: 0;
+}
+
+.navbar-container {
+    /*
+        Enable these to make the title stay at the top of the screen.
+        position: sticky;
+        top: 0;
+    */
+    display: block;
+    background-color: var(--background);
+    padding: 2rem 6rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-list {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    list-style-type: none;
+    gap: 1.5rem;
+}
+
+.navbar-link {
+    color: var(--text-inverted);
+    padding: 0.7rem 2rem;
+    display: block;
+    background-color: var(--button);
+    border-radius: 2rem;
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+
+/*nav {
+    display: block;
+    background-color: rgb(238, 128, 128);
+    text-align: center;
+    width: 15%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    padding-left: 0%;
+    overflow: auto;
+    position: fixed;
+}
+
+nav ul {
+    padding-left: 0px;
+    margin: 0%;
+}
+
+li a {
+    display: block;
+    text-decoration: none;
+    padding: 5%;
+}
+
+a.active {
+    background-color: rgb(255, 75, 120);
+}*/
